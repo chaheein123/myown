@@ -14,6 +14,7 @@ const keys = require("./keys");
 const pgClient = new Pool({
   user: keys.pgUser,
   host: keys.pgHost,
+  // host: "postgres",
   database: keys.pgDatabase,
   password: keys.pgPassword,
   port: keys.pgPort,
