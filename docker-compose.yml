@@ -27,16 +27,16 @@ services:
       - PGPASSWORD=postgres_password
       - PGPORT=5433
 
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile.dev
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile.dev
 
-    ports:
-      - "3000:3000"
+  #   ports:
+  #     - "3000:3000"
 
-    volumes:
-      - /app/node_modules
-      - ./frontend:/app
+  #   volumes:
+  #     - /app/node_modules
+  #     - ./frontend:/app
 
 

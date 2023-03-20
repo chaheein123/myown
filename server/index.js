@@ -35,6 +35,12 @@ pgClient.on("connect", (client) => {
 });
 
 
+// Say hello
+app.get("/hello", (req, res) => {
+  res.send("Hello world!!!")
+});
+
+
 // Express route handlers
 app.get("/getpostgresqlpeople", async (req, res) => {
   const values = await pgClient.query("SELECT * from people");
