@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh '''
+                    echo hell oworld!!!!!
+
+                '''
             }
         }
         stage('Test') {
@@ -12,11 +15,11 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploy...fff.'
-            }
-        }
+        // stage('Deploy') {
+        //     steps {
+        //         echo 'Deploy...fff.'
+        //     }
+        // }
     }
 
 }
